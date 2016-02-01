@@ -1,0 +1,15 @@
+{
+  "name": "Trexx",
+  "version": "0.0.1",
+  "description": "An application to track my workouts.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/almaslegacy/trexx.git"
+  },
+  "author": "Travis Ray",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.0",
+    "gulp-webserver": "^0.8.1"
+  }
+}
