@@ -27,10 +27,10 @@
 <body>
 <div class="page">
 	<div class="container">
-		<div class="info">
-			<img ng-src="img/{{info.name}}.jpg" alt="{{info[].shortname}}'s Avatar">
+		<div class="info" ng-controller="MyController">
+			<img ng-src="img/{{info.shortname}}-small.jpg" alt="{{info.shortname}}'s Avatar">
 			<h3>{{info.shortname}}</h3>
-			<p>Active since {{info[].startdate}}</p>
+			<p>Active since {{info.startdate}}</p>
 	</div>
 	<div class="container">
   	<main class="cf" ng-view></main>
