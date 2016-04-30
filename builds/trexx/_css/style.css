@@ -368,6 +368,33 @@ fieldset {
   }
 }
 
+/* Info Styles */
+.info {
+	position: relative;
+	
+}
+.info .style1 figure {
+	  position: relative;
+    float: left;
+}
+.info figure {
+	  top: 15px;
+    width: auto;
+    margin-right: 25px;
+}
+.info h3 {
+	margin: 0;
+  font-size: 1.25rem;
+}
+.info h3 {
+	  display: block;
+    margin-bottom: 0;
+    line-height: 2rem;
+}
+.info p {
+	  line-height: 2.25rem;
+    font-size: 1rem;
+}
 /* user List Styles */
 
 .userlist {
