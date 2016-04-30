@@ -2,6 +2,13 @@ var myApp = angular.module('myApp',
   ['ngRoute', 'firebase'])
   .constant('FIREBASE_URL', 'https://trexx.firebaseIO.com/');
 
+function MyController($scope) {
+$scope.info = {
+	'name' : 'Travis Ray',
+	'shortname' : 'Trayy',
+	'startdate' : 'July 2014'
+	}
+};
 
 myApp.run(['$rootScope', '$location',
   function($rootScope, $location) {
