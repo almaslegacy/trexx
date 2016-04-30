@@ -210,6 +210,21 @@ input[type=radio] {
   width: auto;
 }
 
+figure {
+    position: relative;
+}
+figure img {
+    float: left;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+figure::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
 
 .ng-enter.ng-enter-active,
 .ng-leave {
@@ -369,31 +384,34 @@ fieldset {
 }
 
 /* Info Styles */
+.container > .info * {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .info {
 	position: relative;
 	
 }
-.info .style1 figure {
-	  position: relative;
-    float: left;
-}
 .info figure {
-	  top: 15px;
-    width: auto;
-    margin-right: 25px;
+	float: left;	
+  top: 15px;
+  width: auto;
+  margin-right: 25px;
 }
 .info h3 {
+	padding-top: 7px;
 	margin: 0;
   font-size: 1.25rem;
 }
 .info h3 {
-	  display: block;
-    margin-bottom: 0;
-    line-height: 2rem;
+  display: block;
+  margin-bottom: 0;
+  line-height: 2rem;
 }
 .info p {
-	  line-height: 2.25rem;
-    font-size: 1rem;
+  line-height: 2.25rem;
+  font-size: 1rem;
 }
 /* user List Styles */
 
