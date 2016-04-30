@@ -80,7 +80,7 @@ html {
 }
 
 body  {
-  font-family: Montserrat, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 160%;
   color: #4a494c;
@@ -95,14 +95,15 @@ body  {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Univers', serif;
+  font-family: 'Roboto', serif;
   font-weight: 100;
   text-shadow: 1px 1px rgb(255,255,255, 1);
 }
 
 a {
   color: #2D8BCF;
-  font-family: Montserrat, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  background-color: transparent;
 }
 
 header {
@@ -116,7 +117,7 @@ h1{
   margin-bottom: 10px;
   padding-top: 10px;
   font-weight: 700;
-    font-family: Montserrat,appleLogo,sans-serif;
+    font-family: 'Roboto',appleLogo,sans-serif;
     margin: 0 0 1rem;
 }
 
@@ -256,7 +257,7 @@ fieldset {
   border-radius: 4px;
   text-align: left;
   font-size: 1.1rem;
-  font-family: Montserrat, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
 }
 
 .search h2 {
@@ -287,7 +288,7 @@ fieldset {
 
 .search label {
   font-size: 1rem;
-  font-family: Montserrat, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
   color: #576E75;
 }
 
@@ -405,7 +406,7 @@ ul.awardslist li {
   color: white;
   font-weight: normal;
   border-radius: 4px;
-  font-family: Montserrat, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
 }
 
 ul.awardslist li:hover {
@@ -457,7 +458,7 @@ nav ul {
 nav ul li {
   float: right;
   color: #145266;
-  font-family: Montserrat, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
   margin: 10px 0;
   font-size: 1.1em;
 }
@@ -465,7 +466,7 @@ nav ul li {
 nav ul li.user {
   background-color: #D24244;
   color: #EFC94C;
-  font-family: Montserrat, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
 }
 
 nav ul li.user.hello {
@@ -486,7 +487,7 @@ nav li a:hover {
 
 .userinfo {
   text-align: center;
-  font-family: Montserrat, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
   padding-bottom: 5px;
 }
 
