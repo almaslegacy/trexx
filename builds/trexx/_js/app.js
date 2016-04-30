@@ -1,17 +1,4 @@
-var myApp = angular.module('myApp',
-  ['ngRoute', 'firebase'])
-  .constant('FIREBASE_URL', 'https://trexx.firebaseIO.com/');
-
-myApp.run(['$rootScope', '$location',
-  function($rootScope, $location) {
-    $rootScope.$on('$routeChangeError',
-      function(event, next, previous, error) {
-        if (error=='AUTH_REQUIRED') {
-          $rootScope.message = 'Sorry, you must log in to access that page';
-          $location.path('/login');
-        } // AUTH REQUIRED
-      }); //event info
-  }]); //run
+var myApp = angular.module('myApp',[]);
 
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
