@@ -1,5 +1,13 @@
 var myApp = angular.module('myApp', ['ngRoute', 'infoControllers']);
 
+myApp.controller('MyinfoController', function MyinfoController($scope) {
+	$scope.info = {
+		'name' : 'Travis Ray',
+		'shortname' : 'Trayy',
+		'startdate' : 'July 2014'
+	}
+});
+
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
      when('/activities', {

@@ -26,9 +26,11 @@
 
 </head>
 <body>
-<div class="page" ng-view>
-
-</div><!-- .page -->
+	<div class="container">
+		<div class="info" ng-include="'_views/info.html'"></div>
+	</div><!-- Info container -->
+<main class="page" ng-view>
+</main><!-- .page -->
 <nav class="cf navbar navbar-fixed-bottom border-line border-line-bottom" ng-include="'_views/nav.html'" role="navigation"></nav>
 </body>
 </html>

@@ -1,13 +1,5 @@
 var infoController = angular.module('infoController',[]);
 
-infoController.controller('MyinfoController', function InfoController($scope) {
-	$scope.info = {
-		'name' : 'Travis Ray',
-		'shortname' : 'Trayy',
-		'startdate' : 'July 2014'
-	}
-});
-
 infoController.controller('ActivitiesController', ['$scope', '$http', function($scope, $http) {
 	$http.get('js/data.json').success(function(data) {
 		$scope.activities = data;
