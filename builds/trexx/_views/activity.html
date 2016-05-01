@@ -1,22 +1,18 @@
-<section class="meetings cf">
-  <h1>Log Activity</h1>
-  <form class="formgroup addmeeting cf"
-    name="myform"
-    ng-submit="addMeeting()"
-    novalidate>
-    
-    <div class="inputwrapper">
-      <input type="text" name="meetingname" placeholder="Meeting Name"
-        ng-model="meetingname" ng-required="true">
-    </div>
-    <button type="submit" class="btn" 
-      ng-disabled="myform.$invalid">+</button>
-  </form>
-
-  <h2>Your Activities</h2>
-  <div class="meeting" ng-repeat="(key, meeting) in meetings">
-    <button class="btn btn-delete tooltip" ng-click="deleteMeeting(key)">
-      <span>Delete this meeting</span></button>
-    <span class="text">{{meeting.name}}</span>
-  </div>
-</section>
+									<div class="row-fluid activity cf">
+                    <div id="totalDistance" class="col-n4 dataItem">
+                        <h5>mi</h5>
+                        <h1><span class="value">{{activities[whichItem].Distance}}</span></h1>
+                    </div>
+                    <div id="totalDuration" class="col-n4 dataItem">
+                        <h5>Duration</h5>
+                        <h1><span class="value">{{activities[whichItem].Duration}}</span></h1>
+                    </div>
+                    <div id="averagePace" class="col-n4 dataItem">
+                        <h5>Average Pace</h5>
+                        <h1><span class="value">{{activities[whichItem].Pace}}</span></h1>
+                    </div>
+                    <div id="totalCalories" class="col-n4 dataItem">
+                      <h5>Calories Burned</h5>
+                      <h1><span class="value">{{activities[whichItem].Calories}}</span></h1>
+                    </div>
+                  </div>

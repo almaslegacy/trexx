@@ -19,34 +19,15 @@
   <script src="https://cdn.firebase.com/_js/client/2.2.4/firebase.js"></script>
   <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
 
-  <script src="_js/app.js"></script>
+  <script src="_js/controllers/app.js"></script>
   <script src="_js/controllers/controllers.js"></script>
   <script src="_js/controllers/activities.js"></script>
   <script src="_js/controllers/dashboard.js"></script>
 
 </head>
 <body>
-<div class="page">
-	<div class="container">
-		<h2>Trexx</h2>
-	</div>
-	<div class="container">
-		<main class="cf">
-				<section id="activities" class="activity-list" ng-controller="ActivitiesController">
-					<ul class="list-table">
-					<li class="activity clickable" ng-repeat="item in activities">
-					<div class="activity-time">
-						<span class="col-50 left">{{activities.Type}}</span>
-						<span class="col-50 right">{{activities.Date}}</span>
-					</div>
-					<figure><img ng-src="img/icon-{{activities.Type}}.png" alt="{{activities.Type}} Activity"></figure>
-					<h3>{{activities.Distance}}</h3>
-					<span>{{activities.Duration}}</span>
-					</li>
-				</ul>		
-			</section>
-		</main>
- 	</div> 
+<div class="page" ng-view>
+
 </div><!-- .page -->
 <nav class="cf navbar navbar-fixed-bottom border-line border-line-bottom" ng-include="'_views/nav.html'" role="navigation"></nav>
 </body>

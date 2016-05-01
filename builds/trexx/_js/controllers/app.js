@@ -1,7 +1,11 @@
-var myApp = angular.module('myApp',[]);
+var myApp = angular.module('myApp', ['ngRoute', 'infoControllers']);
 
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
+     when('/activities', {
+      templateUrl: '_views/activities.html',
+      controller: 'ActivitiesController'
+    }).
     when('/dashboard', {
       templateUrl: '_views/dashboard.html',
       controller: 'DashboardController'
@@ -14,9 +18,9 @@ myApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: '_views/log.html',
       controller: 'LogController'
     }).
-    when('/activity', {
+    when('/activity/:itemID', {
       templateUrl: '_views/activity.html',
-      controller: 'LogController',
+      controller: 'ActivityController',
       resolve: {
         currentAuth: function(Authentication) {
           return Authentication.requireAuth();
@@ -24,6 +28,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
       } //resolve
     }).
     otherwise({
-      redirectTo: '/login'
+      redirectTo: '/activities'
     });
 }]);

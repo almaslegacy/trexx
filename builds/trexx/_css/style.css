@@ -502,6 +502,18 @@ fieldset {
   float: left;
   text-align: left;
 }
+.dataItem#totalDistance, .dataItem#Distance, .dataItem#TOTAL_DISTANCE {
+    background-image: url('../img/distance.png');
+}
+.dataItem#totalDuration, .dataItem#Duration, .dataItem#DURATION {
+  background-image: url('../img/duration.png');
+}
+.dataItem#averagePace, .dataItem#Pace, .dataItem#AVERAGE_PACE {
+  background-image: url('../img/pace.png');
+}
+.dataItem#totalCalories, .dataItem#Calories, .dataItem#CALORIES {
+  background-image: url('../img/calories.png');
+}
 
 @media all and (max-width: 600px) {
   .userlist li {
@@ -543,8 +555,6 @@ ul.awardslist li .btn-delete {
 ul.awardslist li .award {
   padding-right: 15px;
 }
-
-
 
 .branding {
   float: left;
