@@ -12,7 +12,7 @@
 					<li class="activity clickable" ng-repeat="item in activities | limitTo: 8">
 					<div class="activity-time">
 						<span class="col-50 left">{{activities.Type}}</span>
-						<span class="col-50 right">{{activities.Date}}</span>
+						<span class="col-50 right">{{activities.Date | date | "mediumDate""}}</span>
 					</div>
 					<figure><img ng-src="_img/icon-{{activities.Type}}.png" alt="{{activities.Type}} Activity"></figure>
 					<a href="#/activity/{{activities.indexOf(item)}}">
