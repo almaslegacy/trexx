@@ -12,6 +12,6 @@ infoControllers.controller('ActivityController', ['$scope', '$http', 'routeParam
 		$scope.activities = data;
 		$scope.whichItem = $routeParams.itemId;
 		});
-}]); //Activities Controller
+}]); //Activity Controller
 
 

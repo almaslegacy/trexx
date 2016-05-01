@@ -9,7 +9,7 @@
 		<main class="cf">
 		<section id="activities" class="activity-list" ng-controller="ActivitiesController">
 					<ul class="list-table">
-					<li class="activity clickable" ng-repeat="item in activities">
+					<li class="activity clickable" ng-repeat="item in activities | limitTo: 8">
 					<div class="activity-time">
 						<span class="col-50 left">{{activities.Type}}</span>
 						<span class="col-50 right">{{activities.Date}}</span>
