@@ -35,6 +35,19 @@
 	</div>
 	<div class="container">
 		<main class="cf">
+				<section id="activities" class="activity-list" ng-controller="ActivitiesController">
+					<ul class="list-table">
+					<li class="activity clickable" ng-repeat="item in activities">
+					<div class="activity-time">
+						<span class="col-50 left">{{activities.Type}}</span>
+						<span class="col-50 right">{{activities.Date}}</span>
+					</div>
+					<figure><img ng-src="img/icon-{{activities.Type}}.png" alt="{{activities.Type}} Activity"></figure>
+					<h3>{{activities.Distance}}</h3>
+					<span>{{activities.Duration}}</span>
+					</li>
+				</ul>		
+			</section>
 		</main>
  	</div> 
 </div><!-- .page -->
