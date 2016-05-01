@@ -417,7 +417,31 @@ fieldset {
   line-height: 1.6rem;
 }
 /* user List Styles */
-
+#activity-list .list-table {
+	margin-bottom: 0;
+}
+#activities .list-table>li:first-child {
+    border-top: 1px solid #d2d6d5;
+}
+.activity.clickable {
+	cursor: pointer;
+}
+.activity-time {
+	float: left;
+	margin: 0;
+}
+.list-table. > li .col-50 {
+    width: 50%;
+}
+.list-table > li {
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid #d2d6d5;
+    overflow: hidden;
+}
+.list-table. > li .col-50 {
+    width: 50%;
+}
 .userlist {
   width: 100%;
   margin: 0 auto;
