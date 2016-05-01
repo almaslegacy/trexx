@@ -1,4 +1,7 @@
-var myApp = angular.module('myApp', ['ngRoute', 'infoControllers']);
+var myApp = angular.module('myApp', [
+	'ngRoute', 
+	'infoControllers'
+]);
 
 myApp.controller('MyinfoController', function MyinfoController($scope) {
 	$scope.info = {
