@@ -6,7 +6,7 @@ myApp.controller('MyController', function MyController($scope) {
 	}
 });
 
-myApp.controller('ActivitiesController', function ActivitiesController($scope, $http) {
+myApp.controller('ActivitiesController', ['$scope', '$http'], function ($scope, $http) {
 	$http.get('data.json').success(function(data)	{
 		$scope.activities = data;
 		});
